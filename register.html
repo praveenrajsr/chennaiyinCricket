@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/carousel/owl.carousel.css">
     <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
 </head>
 <body>
@@ -155,14 +155,27 @@
                 </div>
                 <h5>Fielding</h5>
                 <div class="form-group col-md-12">
-                    <label for="special Balls">Good at</label>
-                    <select name="" id="" class="form-control mdb-select colorful-select dropdown-primary"  multiple searchable="Search here..">
-                        <option value="" disabled selected>Choose your country</option>
-                        <option value="1">USA</option>
-                        <option value="2">Germany</option>
-                        <option value="3">France</option>
-                        <option value="4">Poland</option>
-                        <option value="5">Japan</option>
+                    <label for="special Balls">Good at (Click and drag to select)</label>
+                    <select name="skills" id="" class="form-control ui fluid dropdown" multiple searchable="Search here..">
+                        <option value="" disabled selected>Choose your fielding position</option>
+                        <option value="slips" class="tr" key="slips">Slips</option>
+                        <option value="third man" class="tr" key="thirdMan">Third Man</option>
+                        <option value="gully" class="tr" key="gully">Gully</option>
+                        <option value="point" class="tr" key="point">Point</option>
+                        <option value="deep point" class="tr" key="deepPoint">Deep point</option>
+                        <option value="cover" class="tr" key="cover">Cover</option>
+                        <option value="deep cover" class="tr" key="deepCover">Deep Cover</option>
+                        <option value="extra cover" class="tr" key="extraCover">Extra Cover</option>
+                        <option value="deep extra cover" class="tr" key="deepExtra">Deep extra cover</option>
+                        <option value="mid on" class="tr" key="midOn">Mid on</option>
+                        <option value="mid off" class="tr" key="midOff">Mid off</option>
+                        <option value="long on" class="tr" key="longOn">Long on</option>
+                        <option value="long off" class="tr" key="longOff">Long off</option>
+                        <option value="square leg" class="tr" key="squareLeg">Square leg</option>
+                        <option value="deep square leg" class="tr" key="deepSquare">Deep square leg</option>
+                        <option value="fine leg" class="tr" key="fineLeg">Fine leg</option>
+                        <option value="mid wicket" class="tr" key="midWicket">Mid wicket</option>
+                        <option value="deep mid wicket" class="tr" key="deepMid">Deep mid wicket</option>
                     </select>
                 </div>
                 <div class="form-group col-md-12">
@@ -213,11 +226,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/mdb.js"></script>
+    <script src="js/transition.min.js"></script>
+    <script src="js/semantic.min.js"></script>
     <script>
         $(document).ready(function(){
-            
-            $('.mdb-select').material_select();
 
             $('#bowlMode').change(function(){
                 var bowlmode = $(this).val();
@@ -237,6 +249,7 @@
                     $('#mediummode').hide();
                 }
             });
+            $('.ui.dropdown').dropdown();
         });
     </script>
 </body>

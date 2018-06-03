@@ -4,7 +4,6 @@
     margin-bottom: 20px;
 }
 .top-section span:nth-last-child(2){
-
     color: rgb(155, 148, 148);
 }
 .reg-btn{
@@ -22,7 +21,10 @@
     background: linear-gradient(to right, #5f27cd, #360d88,#401694 , #6932cf );
 }
 nav ul{
-    margin-left: 25%;
+    margin-left: 15%;
+}
+nav ul li{
+    padding-left: 30px;
 }
 .navbar-dark{
     color: aliceblue;

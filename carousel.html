@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OWL</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <style>
+        .pic{
+            height: 80px;
+            background-color: rgba(246,211,101,1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div><img class="item pic" src="assets/sponsors/bharti.png" alt=""></div>
+            <div><img class="item pic" src="assets/sponsors/fa.png" alt="" srcset=""></div>
+            <div><img class="item pic" src="assets/sponsors/reliance.png" alt="" srcset=""></div>
+            <div><img class="item pic"src="assets/sponsors/tata.png" alt="" srcset=""></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:300,
+                nav:true,
+                autowidth: true,
+                autoplay:true,
+                stagePadding: 250,
+                responsive:{
+                    0:{
+                        margin: 50,
+                        stagePadding: 120,
+                        items:1
+                    },
+                    600:{
+                        margin: 150,
+                        items:3
+                    },
+                    1000:{
+                        margin: 90,
+                        stagePadding: 110,
+                        items:3,   
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+</html>

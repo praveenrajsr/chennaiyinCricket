@@ -1,0 +1,122 @@
+
+.top-section{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.top-section span:nth-last-child(2){
+
+    color: rgb(155, 148, 148);
+}
+.reg-btn{
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.reg-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: white;
+}
+.bg-custom{
+    background: linear-gradient(to right, #5f27cd, #360d88,#401694 , #6932cf );
+}
+nav ul{
+    margin-left: 25%;
+}
+.navbar-dark{
+    color: aliceblue;
+    font-weight: 600;
+}
+.type-logo{
+    width: 120px;
+    height: 60px;    
+}
+.middle{
+    height: 55vh;
+    background: linear-gradient(90deg,  #ffc400,#ffd23c, #ffc812);
+}
+.middle-overlay{
+    position: absolute;
+    z-index: 1;
+    height: 55vh;
+    width: 100%;
+    background-image: url('../assets/bg/design.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-owl-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pic{
+    height: 80px;
+}
+.sponsor-wrap h5{
+    padding-top: 50px;
+}
+.logo{
+    height: 120px;
+    width: 150px;
+    margin-left: 80px;
+}
+.photos-section{
+    position: relative;
+    height: auto;
+    padding-bottom: 20px;
+}
+.photos-inner{
+    padding-top: 30px;
+}
+.photos-section h3{
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Photos */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.news-section{
+    padding-bottom: 50px;
+}
+.videos-section{
+    margin-bottom: 50px;
+}
+.footer{
+    height: auto;
+    background: linear-gradient(45deg, #8259cf, #a83535, #033485);
+    color: white;
+    padding-top: 100px;
+}
+.footer-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-wrapper ul li{
+    list-style: none;
+}
+.footer-wrapper ul li a{
+    color: #fff;
+}
+.copyrights{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: .6em;
+    letter-spacing: 2px;
+}
+/* Register */
+.register-wrap{
+    display: flex;
+    flex-flow: row wrap;
+}
+.hidden{
+    display:none;
+}
+/* portrait */
+
+@media screen and (orientation:portrait){
+    .footer-wrapper{
+        padding-left: 100px;
+    }
+}

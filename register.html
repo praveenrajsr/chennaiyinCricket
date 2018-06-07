@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,244 +14,311 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
 </head>
+
 <body>
     <section class="top-section container">
         <span class="top-contact col-lg-8">Contact us: 9791151863</span>
-        <span><button class="btn reg-btn btn-md float-right">REGISTER</button></span>
+        <span>
+            <button class="btn reg-btn btn-md float-right">REGISTER</button>
+        </span>
     </section>
     <nav class="navbar navbar-expand-lg  bg-custom navbar-dark sticky-top container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="type-logo" src="assets/TypeLogo.PNG" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+            <img class="type-logo" src="assets/TypeLogo.PNG" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"> <a class="nav-link" href="index.html">HOME</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">NEWS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">SCHEDULE</a></li>
-                <li class="nav-item"><a class="nav-link" href="">RESULTS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">SPONSORS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">TEAMS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">PHOTOS</a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">NEWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">SCHEDULE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="result.html">RESULTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sponsor.html">SPONSORS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">TEAMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">PHOTOS</a>
+                </li>
             </ul>
         </div>
-    </nav> <br>
-    <section class="container">
-        <h3>REGISTER</h3> <br>
-        <form class="register-wrap">
-            <div class="col-md-6">
-                <div class="form-row">
-                    <div class="form-group col-md-5">
-                        <label for="name">Name*</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-group col-md-5">
-                        <label for="dob">DOB*</label>
-                        <input type="date" class="form-control" id="dob" required>
-                    </div>
-                    <div class="form-group col-md-5">
-                        <label for="mailid">Email*</label>
-                        <input type="email" class="form-control" id="mailid" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-5">
-                        <label for="name">Mobile Number*</label>
-                        <input type="text" class="form-control" id="name" placeholder="Mobile Number" maxlength="10" required>
-                    </div>
-                    <div class="form-group col-md-10">
-                        <label for="address">Address*</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                    </div>  
-                    <div class="form-group col-md-10">
-                        <label for="aadhar">Aadhar Number*</label>
-                        <input type="text" class="form-control" id="aadhar" placeholder="7895 4859 7878" max-length="12" required>
-                    </div>       
-                    <div class="form-group col-md-5">
-                        <label for="category">Category*</label>
-                        <select name="" id="category" class="form-control">
-                            <option value="employee">Employee</option>
-                            <option value="student">Student</option>
-                        </select>
-                    </div>   
-                    <div class="form-group col-md-5">
-                        <label for="category">Id*</label>
-                        <select name="" id="category" class="form-control">
-                            <option value="company">Company</option>
-                            <option value="college">College</option>
-                        </select>
-                    </div> 
-                    <div class="form-group col-md-5">
-                        <label for="parentname">Parent Name*</label>
-                        <input type="text" class="form-control" id="parentname" placeholder="Parent Name" required>
-                    </div>
-                    <div class="form-group col-md-5">
-                        <label for="parentnum">Parent Contact Number*</label>
-                        <input type="text" class="form-control" id="parentnum" placeholder="Parent Contact Number" required>
-                    </div>  
-                    <div class="form-group col-md-10">
-                        <label for="parentaadhar">Parent Aadhar Number*</label>
-                        <input type="text" class="form-control" id="parentaadhar" placeholder="7895 4859 7878" max-length="12" required>
-                    </div>  
-                    <div class="form-group col-md-5">
-                        <label for="surgery">Surgery if any</label>
-                        <input type="text" class="form-control" id="surgery" placeholder="Surgery if any" required>
-                    </div>
-                    <div class="form-group col-md-5">
-                        <label for="ill">Affected illness if any</label>
-                        <input type="text" class="form-control" id="ill" placeholder="Affected illness if any" required>
-                    </div>
-                </div>
+    </nav>
+    <section class="">
+        <div class="container-fluid ch-news-section">
+            <div class="container">
+                <h5 style="font-weight: 600; font-size: 1.3em; letter-spacing: .3em;" class="">REGISTER</h5>
             </div>
-            <div class="col-md-6">
-                <div class="form-group col-md-12">
-                    <label for="batting">Batting Preference*</label>
-                    <select name="" id="category" class="form-control">
-                        <option value="left">Left</option>
-                        <option value="right">Right</option>
-                    </select>
-                </div>   
-                <div class="form-group col-md-12">
-                    <label for="bowling">Bowling Preference*</label>
-                    <select name="" id="bowling" class="form-control">
-                        <option value="left">Left</option>
-                        <option value="right">Right</option>
-                    </select>
-                </div> 
-                <div class="form-group col-md-12">
-                    <label for="bowlMode">Choose your Bowling Mode*</label>
-                    <select name="" id="bowlMode" class="form-control" placeholder="Choose your Bowling Mode">
-                        <option value="" >Choose your Bowling Mode</option>
-                        <option value="spin">Spin</option>
-                        <option value="pace">Pace</option>
-                        <option value="medium">Medium</option>
-                    </select>
+        </div>
+        <br>
+        <div class="container">
+            <form class="register-wrap">
+                <div class="col-md-6">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="name">Name*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="dob">DOB*</label>
+                            <input class="form-control" id="dob" data-toggle="datepicker" placeholder="dd/mm/yyyy" required>
+                            <div class="text-center">
+                                <span>20</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="mailid">Email*</label>
+                            <input type="email" class="form-control" id="mailid" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="name">Mobile Number*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Mobile Number" maxlength="10" required>
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="address">Address*</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="aadhar">Aadhar Number*</label>
+                            <input type="text" class="form-control" id="aadhar" placeholder="7895 4859 7878" max-length="12" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="category">Category*</label>
+                            <select name="" id="category" class="form-control">
+                                <option value="employee">Employee</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="category">Id*</label>
+                            <select name="" id="category" class="form-control">
+                                <option value="company">Company</option>
+                                <option value="college">College</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="parentname">Parent Name*</label>
+                            <input type="text" class="form-control" id="parentname" placeholder="Parent Name" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="parentnum">Parent Contact Number*</label>
+                            <input type="text" class="form-control" id="parentnum" placeholder="Parent Contact Number" required>
+                        </div>
+                        <div class="form-group col-md-10">
+                            <label for="parentaadhar">Parent Aadhar Number*</label>
+                            <input type="text" class="form-control" id="parentaadhar" placeholder="7895 4859 7878" max-length="12" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="surgery">Surgery if any</label>
+                            <input type="text" class="form-control" id="surgery" placeholder="Surgery if any" required>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="ill">Affected illness if any</label>
+                            <input type="text" class="form-control" id="ill" placeholder="Affected illness if any" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-md-12 hidden" id="spinmode">
-                    <label for="spinmode">Choose your Spin Mode*</label>
-                    <select name="" id="spinmode" class="form-control">
-                        <option value="offside" disabled>Choose your Spin Mode</option>
-                        <option value="offside">Offside</option>
-                        <option value="legside">Legside</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-12 hidden" id="pacemode">
-                    <label for="pacemode">Choose your Pace Mode*</label>
-                    <select name="" id="pacemode" class="form-control">
-                        <option value="offside" disabled>Choose your Pace Mode</option>
-                        <option value="In">In</option>
-                        <option value="Out">Out</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-12 hidden" id="mediummode">
-                    <label for="mediummode">Choose your Medium Mode*</label>
-                    <select name="" id="mediummode" class="form-control">
-                        <option value="offside" disabled>Choose your mediummode Mode</option>
-                        <option value="In">In</option>
-                        <option value="Out">Out</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="special Balls">Special Balls if any</label>
-                    <input type="text" class="form-control" id="" placeholder="Ex: Sodukku, Dancing Balls" required>
-                </div>
-                <h5>Fielding</h5>
-                <div class="form-group col-md-12">
-                    <label for="special Balls">Good at (Click and drag to select)</label>
-                    <select name="skills" id="" class="form-control ui fluid dropdown" multiple searchable="Search here..">
-                        <option value="" disabled selected>Choose your fielding position</option>
-                        <option value="slips" class="tr" key="slips">Slips</option>
-                        <option value="third man" class="tr" key="thirdMan">Third Man</option>
-                        <option value="gully" class="tr" key="gully">Gully</option>
-                        <option value="point" class="tr" key="point">Point</option>
-                        <option value="deep point" class="tr" key="deepPoint">Deep point</option>
-                        <option value="cover" class="tr" key="cover">Cover</option>
-                        <option value="deep cover" class="tr" key="deepCover">Deep Cover</option>
-                        <option value="extra cover" class="tr" key="extraCover">Extra Cover</option>
-                        <option value="deep extra cover" class="tr" key="deepExtra">Deep extra cover</option>
-                        <option value="mid on" class="tr" key="midOn">Mid on</option>
-                        <option value="mid off" class="tr" key="midOff">Mid off</option>
-                        <option value="long on" class="tr" key="longOn">Long on</option>
-                        <option value="long off" class="tr" key="longOff">Long off</option>
-                        <option value="square leg" class="tr" key="squareLeg">Square leg</option>
-                        <option value="deep square leg" class="tr" key="deepSquare">Deep square leg</option>
-                        <option value="fine leg" class="tr" key="fineLeg">Fine leg</option>
-                        <option value="mid wicket" class="tr" key="midWicket">Mid wicket</option>
-                        <option value="deep mid wicket" class="tr" key="deepMid">Deep mid wicket</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-12">
+                <div class="col-md-6">
+                    <div class="form-group col-md-12">
+                        <label for="batting">Batting Preference*</label>
+                        <select name="" id="category" class="form-control">
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="bowling">Bowling Preference*</label>
+                        <select name="" id="bowling" class="form-control">
+                            <option value="left">Left</option>
+                            <option value="right">Right</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="bowlMode">Choose your Bowling Mode*</label>
+                        <select name="" id="bowlMode" class="form-control" placeholder="Choose your Bowling Mode">
+                            <option value="">Choose your Bowling Mode</option>
+                            <option value="spin">Spin</option>
+                            <option value="pace">Pace</option>
+                            <option value="medium">Medium</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 hidden" id="spinmode">
+                        <label for="spinmode">Choose your Spin Mode*</label>
+                        <select name="" id="spinmode" class="form-control">
+                            <option value="offside" disabled>Choose your Spin Mode</option>
+                            <option value="offside">Offside</option>
+                            <option value="legside">Legside</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 hidden" id="pacemode">
+                        <label for="pacemode">Choose your Pace Mode*</label>
+                        <select name="" id="pacemode" class="form-control">
+                            <option value="offside" disabled>Choose your Pace Mode</option>
+                            <option value="In">In</option>
+                            <option value="Out">Out</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12 hidden" id="mediummode">
+                        <label for="mediummode">Choose your Medium Mode*</label>
+                        <select name="" id="mediummode" class="form-control">
+                            <option value="offside" disabled>Choose your mediummode Mode</option>
+                            <option value="In">In</option>
+                            <option value="Out">Out</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="special Balls">Special Balls if any</label>
+                        <input type="text" class="form-control" id="" placeholder="Ex: Sodukku, Dancing Balls" required>
+                    </div>
+                    <h5>Fielding</h5>
+                    <div class="form-group col-md-12">
+                        <label for="special Balls">Good at (Click and drag to select)</label>
+                        <select name="skills" id="" class="form-control ui fluid dropdown" multiple searchable="Search here..">
+                            <option value="" disabled selected>Choose your fielding position</option>
+                            <option value="slips" class="tr" key="slips">Slips</option>
+                            <option value="third man" class="tr" key="thirdMan">Third Man</option>
+                            <option value="gully" class="tr" key="gully">Gully</option>
+                            <option value="point" class="tr" key="point">Point</option>
+                            <option value="deep point" class="tr" key="deepPoint">Deep point</option>
+                            <option value="cover" class="tr" key="cover">Cover</option>
+                            <option value="deep cover" class="tr" key="deepCover">Deep Cover</option>
+                            <option value="extra cover" class="tr" key="extraCover">Extra Cover</option>
+                            <option value="deep extra cover" class="tr" key="deepExtra">Deep extra cover</option>
+                            <option value="mid on" class="tr" key="midOn">Mid on</option>
+                            <option value="mid off" class="tr" key="midOff">Mid off</option>
+                            <option value="long on" class="tr" key="longOn">Long on</option>
+                            <option value="long off" class="tr" key="longOff">Long off</option>
+                            <option value="square leg" class="tr" key="squareLeg">Square leg</option>
+                            <option value="deep square leg" class="tr" key="deepSquare">Deep square leg</option>
+                            <option value="fine leg" class="tr" key="fineLeg">Fine leg</option>
+                            <option value="mid wicket" class="tr" key="midWicket">Mid wicket</option>
+                            <option value="deep mid wicket" class="tr" key="deepMid">Deep mid wicket</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
                         <label for="batting">Wicket Keeper*</label>
                         <input type="radio" name="wicket" id="yes" value="yes">
                         <label for="yes">Yes</label>
                         <input type="radio" name="wicket" id="no" value="no">
                         <label for="no">No</label>
-                    </div>   
-            </div><br>
-            <div class="mx-auto">
-                <button class="btn btn-amber">Lets Play</button>
-            </div>
-        </form><br>
+                    </div>
+                </div>
+                <br>
+                <div class="mx-auto">
+                    <button class="btn btn-amber">Lets Play</button>
+                </div>
+            </form>
+            <br>
+        </div>
     </section>
     <footer class="container-fluid footer">
-            <div class="footer-wrapper container">
-                <div class="first col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <h6>Links</h6>
-                    <ul>
-                        <li><a href="">News</a> </li>
-                        <li><a href="">Register</a> </li>
-                        <li><a href="">Teams</a> </li>
-                        <li><a href="">Photos</a> </li>
-                        <li><a href="">Videos</a> </li>
-                    </ul>
-                </div>
-                <div class="second col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <h6>Follow Us</h6>
-                    <ul>
-                        <li><a href="">Facebook</a> </li>
-                        <li><a href="">Twitter</a> </li>
-                        <li><a href="">Instagram</a> </li>
-                    </ul>
-                </div>
-                <div class="third col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <h6>Contact</h6>
-                    <ul>
-                        <li><a href="">Contact Us</a> </li>
-                        <li><a href="">Be a Sponsor</a> </li>
-                    </ul>
-                </div>
-            </div><br><br>
-            <div class="text-center copyrights ">
-                <p>&copy;Copyrights FaEvents, All Rights Reserved</p>
-            </div><br>
-        </footer>
+        <div class="footer-wrapper container">
+            <div class="first col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-1">
+                <h6>Links</h6>
+                <ul>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Register</a>
+                    </li>
+                    <li>
+                        <a href="">Teams</a>
+                    </li>
+                    <li>
+                        <a href="">Photos</a>
+                    </li>
+                    <li>
+                        <a href="">Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="second col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <h6>Follow Us</h6>
+                <ul>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="third col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <h6>Contact</h6>
+                <ul>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">Be a Sponsor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="text-center copyrights ">
+            <p>&copy;Copyrights FaEvents, All Rights Reserved</p>
+        </div>
+        <br>
+    </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/transition.min.js"></script>
     <script src="js/semantic.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
 
-            $('#bowlMode').change(function(){
+            $('#bowlMode').change(function () {
                 var bowlmode = $(this).val();
-                if(bowlmode == 'spin'){
+                if (bowlmode == 'spin') {
                     $('#spinmode').show();
-                }else{
+                } else {
                     $('#spinmode').hide();
                 }
-                if(bowlmode == 'pace'){
+                if (bowlmode == 'pace') {
                     $('#pacemode').show();
-                }else{
+                } else {
                     $('#pacemode').hide();
                 }
-                if(bowlmode == 'medium'){
+                if (bowlmode == 'medium') {
                     $('#mediummode').show();
-                }else{
+                } else {
                     $('#mediummode').hide();
                 }
             });
             $('.ui.dropdown').dropdown();
+            $('[data-toggle="datepicker"]').datepicker({
+                format: 'dd/mm/yyyy'
+            });
+            $('[data-toggle="datepicker"]').change(function () {
+                var dob = $(this).datepicker();
+                var today = new Date().getUTCDate();
+                var age = today - dob;
+                console.log(today);
+            });
         });
     </script>
 </body>
+
 </html>

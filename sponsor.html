@@ -9,18 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/compiled.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
 </head>
 
 <body>
-    <section class="top-section container">
-        <span class="top-contact col-lg-8">Contact us: 9791151863</span>
-        <span>
-            <button class="btn reg-btn btn-md float-right">REGISTER</button>
-        </span>
-    </section>
     <nav class="navbar navbar-expand-lg  bg-custom navbar-dark sticky-top container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img class="type-logo" src="assets/TypeLogo.PNG" alt="">
+        <a class="" href="index.html">
+            <img id="" class="big-logo full-logo" src="assets/logo/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +32,13 @@
                     <a class="nav-link" href="news.html">NEWS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">SCHEDULE</a>
+                    <a class="nav-link" href="schedule.html">SCHEDULE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="result.html">RESULTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">REGISTER</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="sponsor.html">SPONSORS</a>
@@ -52,9 +52,69 @@
             </ul>
         </div>
     </nav>
-    <br>
-    <section class="container-fluid sponsor-wrapper">
-        
+    <section class=" sponsor-wrapper">
+        <div class="container-fluid ch-news-section">
+            <div class="container">
+                <h5 class="">BE A SPONSOR</h5>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <!-- Material form register -->
+            <form>
+
+                <!-- Material input text -->
+                <div class="md-form">
+                    <input type="text" id="materialFormRegisterNameEx" class="form-control">
+                    <label for="materialFormRegisterNameEx">Name*</label>
+                </div>
+                <div class="md-form">
+                    <input type="text" id="materialFormRegisterNameEx" class="form-control">
+                    <label for="materialFormRegisterNameEx">Company Name*</label>
+                </div>
+                <!-- Material input email -->
+                <div class="md-form">
+                    <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+                    <label for="materialFormRegisterEmailEx">Email Id*</label>
+                </div>
+
+                <!-- Material input email -->
+                <div class="md-form">
+                    <input type="email" id="materialFormRegisterConfirmEx" class="form-control" required>
+                    <label for="materialFormRegisterConfirmEx">Confirm your Email Id*</label>
+                </div>
+
+                <div class="md-form">
+                    <input type="text" id="materialFormRegisterNameEx" class="form-control">
+                    <label for="materialFormRegisterNameEx">Amount You Sponsor</label>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary" type="submit">Sponsor</button>
+                </div>
+            </form>
+            <!-- Material form register -->
+            <br>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h4>Our Sponsors</h4>
+        </div><br>
+        <div class="sponsor-container owl-carousel owl-theme">
+            <div class="container-img">
+                <img src="assets/sponsors/bharti.png" alt="">
+            </div>
+            <div class="container-img">
+                <img src="assets/sponsors/fa.png" alt="">
+            </div>
+            <div class="container-img">
+                <img src="assets/sponsors/rel-capital.png" alt="">
+            </div>
+            <div class="container-img">
+                <img src="assets/sponsors/tata.png" alt="">
+            </div>
+        </div>
     </section>
     <footer class="container-fluid footer">
         <div class="footer-wrapper container">
@@ -68,13 +128,13 @@
                         <a href="register.html">Register</a>
                     </li>
                     <li>
-                        <a href="">Teams</a>
+                        <a href="teams.html">Teams</a>
                     </li>
                     <li>
                         <a href="gallery.html">Photos</a>
                     </li>
                     <li>
-                        <a href="">Videos</a>
+                        <a href="sponsor.html">Sponsors</a>
                     </li>
                 </ul>
             </div>
@@ -114,6 +174,41 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/compiled.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autowidth: false,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        margin: 20,
+                        stagePadding: 50,
+                        items: 1
+                    },
+                    400: {
+                        margin: 50,
+                        stagePadding: 80,
+                        items: 1
+                    },
+                    600: {
+                        margin: 150,
+                        items: 3
+                    },
+                    1000: {
+                        margin: 200,
+                        stagePadding: 110,
+                        items: 3,
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 .top-section{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -11,7 +13,7 @@
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #eee;
-    background-image: linear-gradient(to right, #658cf6 0%, #0731a7 51%, #6598f6 100%);
+    background-image: linear-gradient(to right, #ec5959 0%, #d6470e 51%, #d41e06 100%);
 }
 .all-btn{
     transition: 0.5s;
@@ -32,7 +34,7 @@
     background: linear-gradient(to right, #5f27cd, #360d88,#401694 , #6932cf );
 }
 nav ul{
-    margin-left: 15% !important; 
+    margin-left: 8% !important; 
 }
 nav ul li{
     padding-left: 30px;
@@ -41,16 +43,54 @@ nav ul li{
     color: aliceblue;
     font-weight: 600;
 }
-.type-logo{
-    width: 120px;
-    height: 60px;    
+.full-logo{
+    height: 100px;    
 }
+.type-logo{
+    height: 60px;  
+}
+.big-logo{
+    height: 100px;    
+}
+.small{
+    height: 80px;
+}
+.type-logo .small {
+    font-size: 15px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  }
 .sub-title{
     padding-left: px;
 }
+.inner-follow{
+    height: 50px;
+    background: linear-gradient(to right, #a9b409, #eea60a, #b3a106);
+    color: white;
+    padding-top: 10px;
+}
+.inner-follow a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.inner-follow a i{
+    font-size: 1.5em;
+}
+.fab{
+    padding-left: 20px;
+}
+.fa-facebook-f:hover{
+    color: #3B5998 ; 
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-instagram:hover{
+    color: #262626;
+}
 .middle{
     height: 55vh;
-    background: linear-gradient(90deg,  #ffc400,#ffd23c, #ffc812);
+    background: linear-gradient(90deg,  #d6b443,#ffd034, #e9bc27);
 }
 .middle-overlay{
     position: absolute;
@@ -174,7 +214,7 @@ nav ul li{
     margin-bottom: 20px;
 }
 /* Full News */
-.card{
+.team-card{
     margin-left: 50px;
     margin-bottom: 10px;
 }
@@ -247,7 +287,7 @@ p::before{
 .height-adjust{
     height: 120px;
 }
-.card{
+.team-card{
     height: 350px;
     width: 250px;
 }
@@ -392,6 +432,63 @@ p::before{
     background-repeat: no-repeat;
     border: 2px solid #fda085;
 }
+.team-name{
+    display: inline-block; 
+    font-weight: 800;
+    padding-left: 5px;
+}
+.team-min-image{
+    display: block;
+    background-image: url('../assets/teams/chennai.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.player-image-1{
+    height: 280px;
+    width: 100%;
+    background-image: url('../assets/players/player2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #0f49c7e5;
+    transition: all .5s;
+}
+.player-image-1:hover{
+    background-color: #262626;
+
+}
+.player-image-2{
+    height: 280px;
+    width: 100%;
+    background-image: url('../assets/players/player3.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #a9b409;
+    transition: all .5s
+}
+.player-image-2:hover{
+    background-color: #d6470e;
+}
+.player-image-3{
+    height: 280px;
+    width: 100%;
+    background-image: url('../assets/players/player4.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #d4a712;
+}
+.player-image-3:hover{
+    background-color: #d47012;
+}
+.sponsor-container .container-img{
+    height: 120px;
+    width: 120px;
+}
 @media screen and (orientation: portrait){
     .teams-wrapper{
         margin-left: -20px;
@@ -402,14 +499,22 @@ p::before{
     .player-name{
         font-size: 1.2em;
     }
+    .team-name{
+        display: inline-block; 
+        font-weight: 800;
+        padding-left: 25px;
+    }
+    .squad-team-img{
+        margin-left: 25px;
+    }
 }
 @media(max-width:1024px){
     nav ul{
-        margin-left: 5% !important; 
+        margin-left: -4% !important; 
     }
 }
 @media(max-width:768px){
-    .card{
+    .team-card{
         margin-left: 85px;
     }
 }

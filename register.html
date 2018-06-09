@@ -18,15 +18,9 @@
 </head>
 
 <body>
-    <section class="top-section container">
-        <span class="top-contact col-lg-8">Contact us: 9791151863</span>
-        <span>
-            <button class="btn reg-btn btn-md float-right">REGISTER</button>
-        </span>
-    </section>
     <nav class="navbar navbar-expand-lg  bg-custom navbar-dark sticky-top container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img class="type-logo" src="assets/TypeLogo.PNG" alt="">
+            <img class="big-logo full-logo" src="assets/logo/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -34,23 +28,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="news.html">NEWS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">SCHEDULE</a>
+                    <a class="nav-link" href="schedule.html">SCHEDULE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="result.html">RESULTS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">REGISTER</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="sponsor.html">SPONSORS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">TEAMS</a>
+                    <a class="nav-link" href="teams.html">TEAMS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">PHOTOS</a>
@@ -66,127 +63,139 @@
         </div>
         <br>
         <div class="container">
+            <span>
+                <form style="margin-bottom: 20px;" action="" class="form-group col-md-2">
+                    <select class="form-control lang" name="" id="">
+                        <option value="en">English</option>
+                        <option value="tn">தமிழ்</option>
+                    </select>
+                </form>
+            </span>
             <form class="register-wrap">
                 <div class="col-md-6">
                     <div class="form-row">
                         <div class="form-group col-md-5">
-                            <label for="name">Name*</label>
+                            <label for="name" class="tr" key="name" >Name*</label>
                             <input type="text" class="form-control" id="name" placeholder="Name" required>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="dob">DOB*</label>
+                            <label for="dob"class="tr" key="dob">DOB*</label>
                             <input class="form-control" id="dob" data-toggle="datepicker" placeholder="dd/mm/yyyy" required>
                             <div class="text-center">
-                                <span>20</span>
+                                <span class="age"></span>
                             </div>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="mailid">Email*</label>
+                            <label for="mailid" class="tr" key="email">Email*</label>
                             <input type="email" class="form-control" id="mailid" placeholder="Email">
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="name">Mobile Number*</label>
+                            <label for="name" class="tr" key="number">Mobile Number*</label>
                             <input type="text" class="form-control" id="name" placeholder="Mobile Number" maxlength="10" required>
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="address">Address*</label>
+                            <label for="address" class="tr" key="address">Address*</label>
                             <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="aadhar">Aadhar Number*</label>
+                            <label for="aadhar" class="tr" key="aadhar">Aadhar Number*</label>
                             <input type="text" class="form-control" id="aadhar" placeholder="7895 4859 7878" max-length="12" required>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="category">Category*</label>
+                            <label for="category" class="tr" key="category">Category*</label>
                             <select name="" id="category" class="form-control">
-                                <option value="employee">Employee</option>
-                                <option value="student">Student</option>
+                                <option value="employee" class="tr" key="employee">Employee</option>
+                                <option value="student" class="tr" key="student">Student</option>
                             </select>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="category">Id*</label>
+                            <label for="category" class="tr">Id*</label>
                             <select name="" id="category" class="form-control">
-                                <option value="company">Company</option>
-                                <option value="college">College</option>
+                                <option value="company" class="tr" key="company">Company</option>
+                                <option value="college" class="tr" key="college">College</option>
                             </select>
                         </div>
+                        <div class="form-group col-md-10">
+                            <label for="address" class="tr" key="company">Company or Institution Name*</label>
+                            <input type="text" class="form-control" id="address" placeholder="College or Company Name" required>
+                        </div>
                         <div class="form-group col-md-5">
-                            <label for="parentname">Parent Name*</label>
+                            <label for="parentname" class="tr" key="parent">Parent or Guardian Name*</label>
                             <input type="text" class="form-control" id="parentname" placeholder="Parent Name" required>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="parentnum">Parent Contact Number*</label>
+                            <label for="parentnum" class="tr" key="parentNum">Parent Contact Number*</label>
                             <input type="text" class="form-control" id="parentnum" placeholder="Parent Contact Number" required>
                         </div>
                         <div class="form-group col-md-10">
-                            <label for="parentaadhar">Parent Aadhar Number*</label>
+                            <label for="parentaadhar" class="tr" key="parentAadhar">Parent Aadhar Number*</label>
                             <input type="text" class="form-control" id="parentaadhar" placeholder="7895 4859 7878" max-length="12" required>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="surgery">Surgery if any</label>
+                            <label for="surgery" class="tr" key="surgery">Surgery if any</label>
                             <input type="text" class="form-control" id="surgery" placeholder="Surgery if any" required>
                         </div>
                         <div class="form-group col-md-5">
-                            <label for="ill">Affected illness if any</label>
+                            <label for="ill" class="tr" key="illness">Affected illness if any</label>
                             <input type="text" class="form-control" id="ill" placeholder="Affected illness if any" required>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group col-md-12">
-                        <label for="batting">Batting Preference*</label>
+                        <label for="batting" class="tr" key="batPreference">Batting Preference*</label>
                         <select name="" id="category" class="form-control">
-                            <option value="left">Left</option>
-                            <option value="right">Right</option>
+                            <option value="left" class="tr" key="left">Left</option>
+                            <option value="right" class="tr" key="right">Right</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="bowling">Bowling Preference*</label>
+                        <label for="bowling" class="tr" key="bowlPreference">Bowling Preference*</label>
                         <select name="" id="bowling" class="form-control">
-                            <option value="left">Left</option>
-                            <option value="right">Right</option>
+                            <option value="left" class="tr" key="left">Left</option>
+                            <option value="right" class="tr" key="right">Right</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="bowlMode">Choose your Bowling Mode*</label>
+                        <label for="bowlMode" class="tr" key="mode">Choose your Bowling Mode*</label>
                         <select name="" id="bowlMode" class="form-control" placeholder="Choose your Bowling Mode">
-                            <option value="">Choose your Bowling Mode</option>
-                            <option value="spin">Spin</option>
-                            <option value="pace">Pace</option>
-                            <option value="medium">Medium</option>
+                            <option value="" class="tr" key="mode" disabled selected> Choose your Bowling Mode</option>
+                            <option value="spin"class="tr" key="spin">Spin</option>
+                            <option value="pace" class="tr" key="pace">Pace</option>
+                            <option value="medium" class="tr" key="medium">Medium</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12 hidden" id="spinmode">
-                        <label for="spinmode">Choose your Spin Mode*</label>
+                        <label for="spinmode" class="tr" key="spinMode">Choose your Spin Mode*</label>
                         <select name="" id="spinmode" class="form-control">
-                            <option value="offside" disabled>Choose your Spin Mode</option>
-                            <option value="offside">Offside</option>
-                            <option value="legside">Legside</option>
+                            <option value="offside" class="tr" key="spinMode" disabled selected>Choose your Spin Mode</option>
+                            <option value="offside" class="tr" key="off">Offside</option>
+                            <option value="legside" class="tr" key="leg">Legside</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12 hidden" id="pacemode">
-                        <label for="pacemode">Choose your Pace Mode*</label>
+                        <label for="pacemode" class="tr" key="pacemode">Choose your Pace Mode*</label>
                         <select name="" id="pacemode" class="form-control">
-                            <option value="offside" disabled>Choose your Pace Mode</option>
-                            <option value="In">In</option>
-                            <option value="Out">Out</option>
+                            <option value="offside" class="tr" key="pacemode" disabled selected>Choose your Pace Mode</option>
+                            <option value="In" class="tr" key="in">In</option>
+                            <option value="Out" class="tr" key="out">Out</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12 hidden" id="mediummode">
-                        <label for="mediummode">Choose your Medium Mode*</label>
+                        <label for="mediummode" class="tr" key="mediummode">Choose your Medium Mode*</label>
                         <select name="" id="mediummode" class="form-control">
-                            <option value="offside" disabled>Choose your mediummode Mode</option>
-                            <option value="In">In</option>
-                            <option value="Out">Out</option>
+                            <option value="offside" class="tr" key="mediummode" disabled selected>Choose your mediummode Mode</option>
+                            <option value="In" class="tr" key="in">In</option>
+                            <option value="Out" class="tr" key="out">Out</option>
                         </select>
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="special Balls">Special Balls if any</label>
+                        <label for="special Balls" class="tr" key="specialballs">Special Balls if any</label>
                         <input type="text" class="form-control" id="" placeholder="Ex: Sodukku, Dancing Balls" required>
                     </div>
-                    <h5>Fielding</h5>
+                    <h5 class="tr" key="fielding">Fielding</h5>
                     <div class="form-group col-md-12">
-                        <label for="special Balls">Good at (Click and drag to select)</label>
+                        <label for="special Balls" class="tr" key="goodAt">Good at</label>
                         <select name="skills" id="" class="form-control ui fluid dropdown" multiple searchable="Search here..">
                             <option value="" disabled selected>Choose your fielding position</option>
                             <option value="slips" class="tr" key="slips">Slips</option>
@@ -210,11 +219,11 @@
                         </select>
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="batting">Wicket Keeper*</label>
+                        <label for="batting" class="tr" key="wicket">Wicket Keeper*</label>
                         <input type="radio" name="wicket" id="yes" value="yes">
-                        <label for="yes">Yes</label>
+                        <label for="yes" class="tr" key="yes">Yes</label>
                         <input type="radio" name="wicket" id="no" value="no">
-                        <label for="no">No</label>
+                        <label for="no" class="tr" key="no">No</label>
                     </div>
                 </div>
                 <br>
@@ -231,19 +240,19 @@
                 <h6>Links</h6>
                 <ul>
                     <li>
-                        <a href="">News</a>
+                        <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="">Register</a>
+                        <a href="register.html">Register</a>
                     </li>
                     <li>
-                        <a href="">Teams</a>
+                        <a href="teams.html">Teams</a>
                     </li>
                     <li>
-                        <a href="">Photos</a>
+                        <a href="gallery.html">Photos</a>
                     </li>
                     <li>
-                        <a href="">Videos</a>
+                        <a href="sponsor.html">Sponsors</a>
                     </li>
                 </ul>
             </div>
@@ -281,6 +290,7 @@
         <br>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/transition.min.js"></script>
@@ -310,12 +320,6 @@
             $('.ui.dropdown').dropdown();
             $('[data-toggle="datepicker"]').datepicker({
                 format: 'dd/mm/yyyy'
-            });
-            $('[data-toggle="datepicker"]').change(function () {
-                var dob = $(this).datepicker();
-                var today = new Date().getUTCDate();
-                var age = today - dob;
-                console.log(today);
             });
         });
     </script>

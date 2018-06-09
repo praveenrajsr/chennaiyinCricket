@@ -489,6 +489,10 @@ p::before{
     height: 120px;
     width: 120px;
 }
+.small-dev{
+    padding-top: 355px;
+    padding-bottom: 355px;
+}
 @media screen and (orientation: portrait){
     .teams-wrapper{
         margin-left: -20px;
@@ -507,10 +511,17 @@ p::before{
     .squad-team-img{
         margin-left: 25px;
     }
+    .small-dev{
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
 }
 @media(max-width:1024px){
     nav ul{
         margin-left: -4% !important; 
+    }
+    .small-dev{
+        padding-top: 555px;
     }
 }
 @media(max-width:768px){

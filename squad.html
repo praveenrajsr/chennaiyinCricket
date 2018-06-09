@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chennaiyin Squad</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/compiled.min.css">
-    <link rel="stylesheet" href="css/carousel/owl.carousel.css">
-    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/compiled.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' %}" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg  bg-custom navbar-dark sticky-top container-fluid">
         <a class="" href="index.html">
-            <img class="big-logo full-logo" src="assets/logo/logo.png" alt="">
+            <img class="big-logo full-logo" src="{% static 'assets/logo/logo.png' %}" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
         <div class="container-fluid ch-news-section">
             <div class="container">
                 <div class="">
-                    <img style="height:150px;" src="assets/teams/chennai.png" alt="" class="squad-team-img img-fluid">
+                    <img style="height:150px;" src="{% static 'assets/teams/chennai.png' %}" alt="" class="squad-team-img img-fluid">
                     <span class="team-name text-center">CHENNAI SUPER KINGS</span>
                 </div>
             </div>
@@ -254,12 +254,12 @@
         </div>
         <br>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/compiled.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/carousel/owl.carousel.min.js"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/compiled.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/carousel/owl.carousel.min.js' %}"></script>
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
